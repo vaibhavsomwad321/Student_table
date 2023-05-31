@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-bordered">
+                <thead>
+                    <th>FirstName</th>
+                    <th>lastName</th>
+                    <th>Email</th>
+                    <th>phoneNumber</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let obj of formArray">
+                        <td>
+                            {{obj.fistName}}
+                        </td>
+                        <td>
+                            {{obj.lastName}}
+                        </td>
+                        <td>
+                            {{obj.email}}
+                        </td>
+                        <td>
+                            {{obj.phoneNumber}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

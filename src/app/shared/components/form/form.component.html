@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="firstName"><strong>FirstName</strong></label>
+                    <input type="text" class="form-control" formControlName="fistName">
+                    <ng-container
+                    *ngIf="
+                      createForm.get('fullname')?.invalid &&
+                      createForm.get('fullname')?.touched
+                    "
+                  >
+                    <span *ngIf="createForm.get('fistName')?.hasError('required')">
+                      <span class="text-danger"> Full Name Is Required </span>
+                    </span>
+                  </ng-container>
+                  <ng-container
+                    *ngIf="
+                      createForm.get('fistName')?.dirty &&
+                      createForm.get('fistName')?.touched
+                    "
+                  >
+                  </ng-container>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName"><strong>lastName</strong></label>
+                    <input type="text" class="form-control" formControlName="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="text" class="form-control" formControlName="email">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber"><strong>phoneNumber</strong></label>
+                    <input type="text" class="form-control" formControlName="phoneNumber">
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary"  [disabled]="createForm.invalid">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

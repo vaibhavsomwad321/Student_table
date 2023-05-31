@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "fistName": "vaibhav",
+      "lastName": "somwad",
+      "email": "somwadvaibhav@gmail.com",
+      "phoneNumber": "7483420485",
+      "id": 1
+    },
+    {
+      "fistName": "shubham",
+      "lastName": "joshi",
+      "email": "js@gmail.com",
+      "phoneNumber": "9309155715",
+      "id": 2
+    },
+    {
+      "fistName": "vaibhav",
+      "lastName": "somwad",
+      "email": "somwadvaibhav@gmail.com",
+      "phoneNumber": "7483420485",
+      "id": 3
+    },
+    {
+      "fistName": "vaibhav",
+      "lastName": "somwad",
+      "email": "somwadvaibhav@gmail.com",
+      "phoneNumber": "4483420485",
+      "id": 4
+    },
+    {
+      "fistName": "vaibhav",
+      "lastName": "somwad",
+      "email": "somwadvaibhav@gmail.com",
+      "phoneNumber": "0483420485",
+      "id": 5
+    },
+    {
+      "fistName": "DSFJHKLDSFJLKSDJFL",
+      "lastName": "SDFJKLLSKDJFLKJF",
+      "email": "SKDFJLSKDJFLSKJDF@GMAIL.COM",
+      "phoneNumber": "1234567896",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
